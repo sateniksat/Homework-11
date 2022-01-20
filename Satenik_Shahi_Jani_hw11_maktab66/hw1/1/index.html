@@ -1,76 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="author" content="John Doe" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Satenik Shahi">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
     <title>To Do</title>
-  </head>
-  <body class="">
+</head>
+<body class="">
     <div class="container">
-      <header>
-        <h2>T O D O</h2>
-        <div class="mode light">
-          <span
-            class="iconify"
-            data-icon="bi:moon-fill"
-            data-width="25"
-            data-height="25"
-          ></span>
-        </div>
-        <div class="mode dark" style="display: none">
-          <span
-            class="iconify"
-            data-icon="bi:sun-fill"
-            data-width="25"
-            data-height="25"
-          ></span>
-        </div>
-      </header>
-      <div id="myDIV" class="input">
-        <input
-          type="text"
-          id="myInput"
-          class=""
-          placeholder="  Create new todo..."
-        />
-      </div>
-      <div class="todo-container">
-        <ul class="todo-list">
-          <li class="completed">
-            <div class="mark completed"><div class="tik completed"></div></div>
-            first task <span class="close"></span>
-          </li>
-          <li class="">
-            <div class="mark"><div class="tik"></div></div>
-            second task<span class="close"></span>
-          </li>
-          <li class="">
-            <div class="mark"><div class="tik"></div></div>
-            third task<span class="close"></span>
-          </li>
-          <div class="result">
-            <div class="text"><span class="counter">2 </span> items left</div>
-            <div class="clear">Clear Completed</div>
-          </div>
-        </ul>
-      </div>
-      <div class="status">
-        <div class="all">All</div>
-        <div class="active">Active</div>
-        <div class="completed">Completed</div>
-      </div>
+<header>
+    <h2>T O D O</h2>
+    <div class="mode" >
+    <span class="iconify" data-icon="bi:moon-fill" data-width="25" data-height="25"></span>
+</div>
+<div class="mode dark" style="display: none;"  >
+    <span class="iconify" data-icon="bi:sun-fill" data-width="25" data-height="25"></span>
+</div>
+</header>
+<div id="myDIV" class="input">
+    <input type="text" id="myInput" class="" placeholder="  Create new todo...">
     </div>
+    <div class="todo-container">
+        <ul class="todo-list ">
+            <li class="completed "><div class="mark  completed"><div class="tik completed"></div></div> first task <span class="close"></span></li>
+            <li  class="uncomplited"><div class="mark "><div class="tik"></div></div>second task<span class="close"></span></li>
+            <li class="uncomplited"><div class="mark "><div class="tik"></div></div>third task<span class="close"></span></li>
+        </ul>
+        <div class="result ">
+            <div class="text">
+            <span class="counter">2</span>  items left</div>
+            <div class="clear">Clear Completed</div>
+        </div>
+      </div>
+<div class="status ">
+    <div class="all">All</div>
+    <div class="active">Active</div>
+    <div class="completed">Completed</div>
+</div>
+
 
     <script src="./assets/JS/main.js"></script>
-  </body>
+</body>
 </html>
