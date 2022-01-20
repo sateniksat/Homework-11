@@ -1,0 +1,153 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/bg-desktop-light.jpg) no-repeat;
+}
+body.dark {
+  background: url(../img/bg-desktop-dark.jpg) no-repeat;
+  background-color: #292b3a;
+}
+.container {
+  margin-top: 8%;
+  flex-basis: 40%;
+}
+header {
+  display: flex;
+  color: white;
+  width: 100%;
+  margin: 5% 0;
+}
+.mode {
+  margin-left: auto;
+  cursor: pointer;
+}
+.input {
+  width: 100%;
+  margin: 3% 0;
+}
+input {
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  padding: 2%;
+}
+.todo-container {
+  width: 100%;
+  margin: 2% 0;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(7, 7, 7, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.todo-list {
+  border-radius: 5px;
+  background: white;
+}
+
+ul li {
+  position: relative;
+  padding: 3%;
+  list-style-type: none;
+  border-bottom: solid rgba(0, 0, 0, 0.19) 1px;
+  display: flex;
+  align-items: center;
+}
+ul li.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+.status {
+  width: 100%;
+  margin: 2% 0;
+  border: 0;
+  border-radius: 5px;
+  padding: 3%;
+  color: gray;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(7, 7, 7, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.status > div {
+  margin: 0 2%;
+  font-size: small;
+  cursor: pointer;
+}
+.mark {
+  cursor: pointer;
+  width: 5%;
+  border: 1px solid rgba(0, 0, 0, 0.19);
+  padding: 2.5%;
+  border-radius: 50%;
+  margin-right: 3%;
+  position: relative;
+}
+.mark.completed {
+  background-image: linear-gradient(to right, #6cc2fc, #b16af4);
+}
+.tik.completed::before {
+  content: "";
+  position: absolute;
+  border-color: white;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 6px;
+  left: 10px;
+  transform: rotate(45deg);
+  height: 8px;
+  width: 3px;
+}
+.close {
+  width: 5%;
+  cursor: pointer;
+  margin-left: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.close::before,
+.close::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: gray;
+}
+.close::before {
+  transform: rotate(45deg);
+}
+.close::after {
+  transform: rotate(-45deg);
+}
+.result {
+  display: flex;
+  padding: 3%;
+  color: rgb(140, 140, 140);
+  font-size: smaller;
+}
+.clear {
+  margin-left: auto;
+  cursor: pointer;
+}
+.mark.dark {
+  border-color: #9fa1b8;
+}
+ul li.dark {
+  border-color: #6f7189;
+  background-color: #484b6a;
+  color: white;
+}
+.todo-list.dark,
+.status.dark,
+.result.dark,
+input.dark {
+  background-color: #484b6a;
+  color: white;
+}
