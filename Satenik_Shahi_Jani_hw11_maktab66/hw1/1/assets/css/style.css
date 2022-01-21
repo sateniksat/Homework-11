@@ -38,14 +38,13 @@ input {
   border-radius: 5px;
   padding: 2%;
 }
+
 .todo-container {
   width: 100%;
   margin: 2% 0;
   border: 0;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(7, 7, 7, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.todo-list {
   border-radius: 5px;
   background: white;
 }
@@ -97,8 +96,8 @@ ul li.completed {
   border-color: white;
   border-style: solid;
   border-width: 0 2px 2px 0;
-  top: 6px;
-  left: 10px;
+  top: 30%;
+  left: 40%;
   transform: rotate(45deg);
   height: 8px;
   width: 3px;
@@ -144,10 +143,39 @@ ul li.dark {
   background-color: #484b6a;
   color: white;
 }
-.todo-list.dark,
+.todo-container.dark,
 .status.dark,
 .result.dark,
 input.dark {
   background-color: #484b6a;
   color: white;
+}
+
+@media (max-width: 992px) {
+  .container {
+    margin-top: 8%;
+    flex-basis: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    margin-top: 8%;
+    flex-basis: 70%;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    background: url(../img/bg-mobile-light.jpg) no-repeat contain;
+  }
+  body.dark {
+    background: url(../img/bg-mobile-dark.jpg) no-repeat contain;
+  }
+  .container {
+    margin-top: 20%;
+    flex-basis: 80%;
+  }
+  .tik.completed::before {
+    top: 12%;
+    left: 32%;
+  }
 }
