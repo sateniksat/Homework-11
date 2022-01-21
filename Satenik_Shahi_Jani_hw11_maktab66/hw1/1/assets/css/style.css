@@ -156,6 +156,10 @@ input.dark {
 .display-none{
   display: none;
 }
+.btn:hover{
+  color:black;
+}
+/* // Medium devices (tablets, 768px and up) */
 @media (max-width: 992px){
   .container {
     margin-top: 8%;
