@@ -150,20 +150,26 @@ input.dark {
   background-color: #484b6a;
   color: white;
 }
-
-@media (max-width: 992px) {
+.blue{
+  color: dodgerblue;
+}
+.display-none{
+  display: none;
+}
+@media (max-width: 992px){
   .container {
     margin-top: 8%;
     flex-basis: 50%;
   }
 }
 @media (max-width: 768px) {
+
   .container {
     margin-top: 8%;
     flex-basis: 70%;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 480px) { 
   body {
     background: url(../img/bg-mobile-light.jpg) no-repeat contain;
   }
@@ -176,6 +182,7 @@ input.dark {
   }
   .tik.completed::before {
     top: 12%;
-    left: 32%;
+    left:32%;
   }
-}
+ }
+ 
