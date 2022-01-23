@@ -8,11 +8,11 @@
 // const drawMessage = () => `It's a Draw!`;
 function count(){
   let countList=document.querySelectorAll("li.uncompleted").length;
-  let counter=document.querySelector("counter");
+  let counter=document.querySelector(".counter");
   counter.innerText=null;
   counter.innerText=countList;
   }
-  // count();
+  count();
   const input = document.getElementById("myInput");
   const todoList = document.querySelector(".todo-list");
   let value1 = document.createTextNode(input.value);
