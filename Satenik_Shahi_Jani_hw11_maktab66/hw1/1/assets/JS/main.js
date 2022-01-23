@@ -9,7 +9,8 @@
 function count(){
   let countList=document.querySelectorAll("li.uncompleted").length;
   let counter=document.querySelector("counter");
-  counter.innerHTML=countList;
+  counter.innerText=null;
+  counter.innerText=countList;
   }
   // count();
   const input = document.getElementById("myInput");
@@ -26,6 +27,12 @@ function count(){
       todoLI.classList.add("uncomplited");    
       todoLI.innerHTML = `<div class="mark uncompleted"><div class="tik"></div></div>${input.value} <span class="close"></span>`;
       todoList.appendChild(todoLI);
+      if( document.querySelector("body").classList.contains("dark")){
+        todoLI.classList.add("dark");  
+        document.querySelectorAll(".mark").forEach((item) => {
+          item.classList.add("dark");
+        });
+      }
       // result.innerHTML = addtodoli();
       count();
       input.value = "";
@@ -35,8 +42,8 @@ function count(){
   document.querySelector(".clear").addEventListener("click", () => {
     document.querySelectorAll("li.completed").forEach((element) => {
       element.closest("li").remove();
-      count();
     });
+    count();
   });
   //mark
   document.querySelectorAll(".mark").forEach((box) =>
