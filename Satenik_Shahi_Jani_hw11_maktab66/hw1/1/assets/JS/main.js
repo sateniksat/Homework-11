@@ -24,9 +24,22 @@ function count(){
     }
     if (e.key === "Enter" && input.value !== "") {
       let todoLI = document.createElement("li");
+      
       todoLI.classList.add("uncomplited");    
-      todoLI.innerHTML = `<div class="mark uncompleted"><div class="tik"></div></div>${input.value} <span class="close"></span>`;
+      todoLI.innerHTML = `<div class="mark uncompleted"><div class="tik"></div></div>${input.value}<span class="close"></span>`;
+      // let mark = document.createElement("div");
+      // mark.className="mark uncomplited";
+      // // mark.classList.add("uncomplited");    
+      // todoLI.appendChild(mark);
+      // let tik = document.createElement("div");
+      // tik.className="tik";
+      // mark.appendChild(tik);
+      // todoLI.innerHTML = input.value;
+      // let close = document.createElement("span");
+      // close.className="close";
+      // todoLI.appendChild(close);
       todoList.appendChild(todoLI);
+
       if( document.querySelector("body").classList.contains("dark")){
         todoLI.classList.add("dark");  
         document.querySelectorAll(".mark").forEach((item) => {
